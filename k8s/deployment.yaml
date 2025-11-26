@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: app-gitops
 spec:
-  replicas: 1 # Empezaremos con 1 réplica
+  replicas: 3 # Empezaremos con 1 réplica
   selector:
     matchLabels:
       app: demo-gitops
@@ -30,3 +30,4 @@ spec:
     - port: 80
       targetPort: 80
       nodePort: 30080 # Puerto fijo para fácil acceso
+
