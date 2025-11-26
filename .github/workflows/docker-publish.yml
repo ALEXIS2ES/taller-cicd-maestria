@@ -32,4 +32,4 @@ jobs:
 
           tags: |
             ${{ secrets.DOCKER_USERNAME }}/app-unmsm:latest
-          ${{ secrets.DOCKER_USERNAME }}/app-unmsm:${{ github.sha }}
+            ${{ secrets.DOCKER_USERNAME }}/app-unmsm:${{ github.sha }}
